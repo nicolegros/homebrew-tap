@@ -1,9 +1,9 @@
 cask "planeai" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.106.3"
-  sha256 arm:   "7d9cb25a69b1cad09a7956048e4508b7428c8da2b961ac345abd5c7c5edd2f1f",
-         intel: "baa219e38c605c40bc96a3e48bf92163d451941e34276c115588ec22c8d58b59"
+  version "1.106.4"
+  sha256 arm:   "64eb8b0665941d67f4af75b18ac7fe7863884a6e64df493378b6a075ccc57603",
+         intel: "dace12193f1cc067835102dc59293656c64c8f575804a5e591f7482a161cfaa2"
 
   url "https://github.com/nicolegros/planeai/releases/download/v#{version}/planeai_#{version}_#{arch}.dmg"
   name "planeai"
