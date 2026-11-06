@@ -1,11 +1,8 @@
 cask "planeai" do
-  arch arm: "aarch64", intel: "x64"
+  version "1.121.1"
+  sha256 "cc36431b3da565e7884674aee4be21c79b3168c3bc7af373a4cb4283fa99a090"
 
-  version "1.119.0"
-  sha256 arm:   "6b03f062df1017d2005fc9840d0091f3d94a1d28900a1951a738fa013dcb026d",
-         intel: "4a2ca746fd602cb3d25cbca3f46733de4d3f8f1aafa0948461600cecc450b949"
-
-  url "https://github.com/nicolegros/planeai/releases/download/v#{version}/planeai_#{version}_#{arch}.dmg"
+  url "https://github.com/nicolegros/planeai/releases/download/v#{version}/planeai_#{version}_aarch64.dmg"
   name "planeai"
   desc "Desktop orchestrator for AI coding agent sessions"
   homepage "https://github.com/nicolegros/planeai"
@@ -16,6 +13,7 @@ cask "planeai" do
   end
 
   auto_updates true
+  depends_on arch: :arm64
   depends_on :macos
 
   app "planeai.app"
