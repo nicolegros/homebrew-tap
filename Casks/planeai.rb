@@ -1,6 +1,6 @@
 cask "planeai" do
-  version "1.124.0"
-  sha256 "73cef8f58ff1342dbed2a96df01fc7d42d1df0e231da2545b5db84aa1cb71b20"
+  version "1.124.1"
+  sha256 "c237f54095168d40bc7feedf058a7eb43e58674265f1ff0955c4a38002183dd9"
 
   url "https://github.com/nicolegros/planeai/releases/download/v#{version}/planeai_#{version}_aarch64.dmg"
   name "planeai"
